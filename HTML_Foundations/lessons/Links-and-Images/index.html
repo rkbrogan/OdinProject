@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Links and Images</title>
+  </head>
+
+  <body>
+    <h1>Links and Images</h1>
+
+    <p>
+      Here you can find my work about Links and Images in HTML.
+    </p>
+    <br>
+    <br>
+
+    <h2>Links</h2>
+    <p>
+      There are generally two types of links that are used:
+      <ul>
+        <li>Links to pages on other websites on the internet (absolute links)</li>
+        <li>Links to pages located on our own website (relative links)</li>
+      </ul>
+    </p>
+    
+    <br>
+
+    <p>
+      Here is a link to the <a href="https://www.theodinproject.com/about">Odin Project</a>
+    </p>
+
+    <p>
+      The link in the footer leads back to my <a href="../index.html">Home</a> page
+    </p>
+
+    <p>
+      Here is an image using a relative link:
+      <br>
+      <img src="images/dog.jpg" alt="A Handsome Dog">
+    </p>
+    
+    <p>
+      Here is an image from Odin Project using an absolute link:
+      <br>
+      <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo">
+    </p>
+
+    <br>
+
+    <h2>Images</h2>
+    <p>
+      There are four main image formats in use on the web that are all designed to do different things:
+      <ul>
+        <li>JPG</li>
+        <li>GIF</li>
+        <li>PNG</li>
+        <li>SVG</li>
+      </ul>
+    </p>
+    <br>
+
+    <h3><i>JPG Images</i></h3>
+    <img src="images/mochi.jpg" alt="Mochi JPG">
+    <p>
+      JPG images are designed for handling large color palettes without dramatically increasing file size.
+      <br>
+      <br>
+      PROs:
+      <ul>
+        <li>Great for images with gradients in them</li>
+        <li>Great for photos</li>
+      </ul>
+      CONs:
+      <ul>
+        <li>Don't allow for transparent pixels</li>
+      </ul>
+    </p>
+
+    <br>
+
+    <h3><i>GIF Images</i></h3>
+    <img src="images/mochi.gif" alt="Mochi GIF">
+    <p>
+      GIF are for simple animations. However, they're very limited in terms of color palette.
+      <br>
+      <br>
+      PROs:
+      <ul>
+        <li>Great to show animations or memes</li>
+      </ul>
+      CONs:
+      <ul>
+        <li>Can't have semi-opaque pixels</li>
+        <li>Difficult to contain high levels of detail on transparent background</li>
+      </ul>
+    </p>
+
+    <br>
+
+    <h3><i>PNG Images</i></h3>
+    <img src="images/mochi.png" alt="Mochi PNG">
+    <p>
+      PNGs are great for anything that's not a photo or animated. They work well with opacity and don't have color palette limitations.
+      <br>
+      <br>
+      PROs:
+      <ul>
+        <li>Great for icons, technical diagrams, and logos</li>
+      </ul>
+      CONs:
+      <ul>
+        <li>PNG file of same quality would be bigger than equivalent JPG file</li>
+      </ul>
+    </p>
+
+    <br>
+
+    <h3><i>SVG Images</i></h3>
+    <img src="images/mochi.svg" alt="Mochi SVG">
+    <p>
+      SVG is a vector-based graphics format, unlike the previous image types. Vector-based graphics can scale up or down to any dimension without loss of quality. <em>amazing</em>
+      <br>
+      <br>
+      PROs:
+      <ul>
+        <li>Great for responsive design</li>
+        <li>Good for same use cases as PNGs</li>
+      </ul>
+      CONs:
+      <ul>
+        <li>For consistency across browsers, you must convert any text fields to outlines using an image editor</li>
+        <li>Images that contain a lot of text can have impact on file size</li>
+      </ul>
+    </p>
+
+    <br>
+    <br>
+
+    <h3>Image Dimensions</h3>
+    <p>
+      By default, the <code>&lt;img/&gt;</code> element uses the inherit dimensions of it image file. The images on this page all have 150x150 pixels, while the SVG uses 75x75 pixels.
+    </p>
+
+    <p>
+      Pixel-based image formats need to be twice as big as you want them to appear on retina displays. To modify these images down to 75x75, you can use <code>&lt;img/&gt;</code> element's <code>width</code> attribute.
+    </p>
+
+    <br>
+    
+    <br>
+    JPG<img src="images/mochi.jpg" alt="Small Mochi JPG" width='75'/>
+    <br>
+    GIF <img src="images/mochi.gif" alt="Small Mochi GIF" width='75'/>
+    <br>
+    PNG <img src="images/mochi.png" alt="Small Mochi PNG" width='75'/>
+    <br>
+    SVG <img src="images/mochi.svg" alt="Another Mochi SVG" width='75'/>
+
+    <br>
+    
+    <p>
+      Setting only one of either <code>width</code> or <code>height</code> attribute will cause the image to scale proportionally, while defining both will stretch the image.
+    </p>
+
+  </body>
+  <footer>
+    <a href="../index.html">Back to home</a>
+  </footer>
+</html>
