@@ -1,0 +1,93 @@
+CSS Basic Syntax:
+    Selector and a semi-colon separated list of declarations with each of those 
+    declarations being made up of a property-value pair.
+
+<div>:
+    One of the basic HTML elements. An empty container.
+
+Selectors:
+    Refer to the HTML elements to which CSS rules apply; they're actually what 
+    is being selected for each rule.
+
+    - Universal Selector:
+        Select elements of any type. Syntax is just '*'.
+
+    - Type Selector:
+        Will select elements of a given element type. Syntax is just the name 
+        of the element.
+
+    - Class Selector:
+        Will select all elements of a given class. (Class is just an attribute 
+        placed on an HTML element). 
+
+    - ID Selector:
+        Similar to class selector, but uses # followed by the value of the ID 
+        attribute. Shouldn't be used that much (or at all). Major difference 
+        between classes and IDs is that an element can only have ONE ID. An 
+        ID cannot be repeated on a single page and the ID attribute should 
+        not contain any whitespace.
+
+    - Grouping Selector:
+        Just use a comment between selector names before definition.
+
+    - Chaining Selector:
+        Use a '.' to chain between class names. Can also be used with IDs by 
+        seperating them with a '#'. You can't chain more than one type of 
+        selector since an element can't be two different types at once. 
+
+    - Descendant Combinator:
+        Will only cause elements that match the last selector to be selected 
+        if they also have an ancestor that matches the previous selector. 
+        Syntax is a single space between selectors.
+
+    - Specificity:
+        * A CSS declaration that is more specific will take precedence over 
+          less specific ones.
+        * ID Selectors will always beat any number of class selectors.
+        * Class Selectors will always beat any number of type selectors.
+        * Type Selectors will always beat any number of anything less 
+          specific to it.
+
+How to link CSS to HTML:
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+
+Internal CSS:
+    Use CSS within the HTML file itself instead of creating a completely 
+    seperate file. Place all of the rules inside of a pair of opening and 
+    closing <style> tags inside the <head> tags. Can be useful for adding 
+    unique styles to a single page of a website.
+
+Inline CSS: 
+    Makes it possible to add style directly to HTML elements, but isn't 
+    recommended. 
+
+        
+        
+
+Properties:
+    - color:
+        Sets an element's text color.
+    
+    - background-color:
+        Sets the background color of an element.
+
+Typography Basics:
+    - font-family:
+        Font family used for text. 
+
+    - font-size:
+        Size of the font using px.
+
+    - font-weight:
+        Affects the boldness of text. Can use keywords or a number.
+
+    - text-align:
+        Align text horizontally within an element. Common keywords can be 
+        used as the value (center, left, etc).
+
+Image
+    - height
+
+    - width
+
